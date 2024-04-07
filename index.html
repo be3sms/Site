@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Tail</title>
+</head>
+
+<body>
+    <section class="panel" id="first-page">
+        <header class="d-flex justify-content-between align-items-end container">
+            <div class="logo"><img src="assets/img/logo.png" alt="logo"></div>
+            <div class="contact">
+                <div class="item d-flex justify-content-center align-items-center mb-2">
+                    <img src="assets/img/address.png" alt="address">
+                    <p class="text-upper">волгоград, б-р 30-летия Победы, д. 21</p>
+                </div>
+                <div class="item d-flex justify-content-center align-items-center">
+                    <img src="assets/img/phone.png" alt="phone">
+                    <p class="text-upper">+7 988 978 3443</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="container d-flex flex-column align-items-center justify-content-center content"
+            style="margin-top: 75px;">
+            <ul class="nav">
+                <li class="text-upper"><a href="#about-us">О нас</a></li>
+                <li class="text-upper"><a href="#catalog">Каталог</a></li>
+                <li class="text-upper"><a href="#sub">Контакты</a></li>
+            </ul>
+            <h1 class="site-name" style="margin-top: 40px;">хвостик</h1>
+            <p class="text-upper text-center mt-3" style="font-size: 19px;">зоомагазин для ваших питомцев</p>
+            <a class="btn btn-white-big text-upper" style="margin-top: 50px" href="#catalog">каталог</a>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <section class="panel" id="about-us">
+        <div class="container d-flex h-100 flex-column align-items-center justify-content-center">
+            <h1 class="section-title text-upper" id="titleaboutus">о нас</h1>
+            <p class="text-upper text-center mt-5" style="background-color: white; border: 50px solid white; 
+            border-radius: 150px;"
+            >Добро пожаловать в мир заботы и радости для ваших питомцев!<br>
+            «Хвостик» - это уютный зоомагазин, где вашим питомцам будет радость и забота.<br>
+                Мы уделяем особое внимание качеству продукции и комфорту наших клиентов - маленьких и больших друзей нашего магазина.<br>
+                Наш ассортимент включает в себя все необходимое для заботы о домашних питомцах: корма высокого качества,<br>
+                аксессуары, игрушки, медицинские препараты и многое другое. Мы следим за тем, чтобы наши товары соответствовали<br>
+                самым строгим стандартам безопасности и качества.<br>
+                Наша дружелюбная команда сотрудников всегда готова помочь вам подобрать оптимальные товары для ваших питомцев и ответить на все ваши вопросы.<br>
+                Мы ценим доверие наших клиентов и стремимся делать все возможное, чтобы сделать покупки в нашем магазине приятным и полезным опытом для вас и ваших питомцев.
+            </p>
+            <br>
+            <a class="btn btn-white-big text-upper" href="#catalog" style="margin-top: 30px;">Каталог</a>
+        </div>
+    </section>
+
+    <section class="panel" id="catalog">
+        <h1 class="section-title text-upper">каталог</h1>
+        <input type="radio" id="all" checked name="categories" value="all">
+        <input type="radio" id="cats" name="categories" value="cats">
+        <input type="radio" id="dogs" name="categories" value="dogs">
+        <input type="radio" id="rodents" name="categories" value="rodents">
+        <div class="categories">
+            <form id="catalog_filter">
+                <ul id="categories-container">
+                    <li>
+                        <label for="all" id="all-tab" class="text-upper">все</label>
+                    </li>
+                    <li>
+                        <label for="cats" id="cats-tab" class="text-upper">для кошек</label>
+                    </li>
+                    <li>
+                        <label for="dogs" id="dogs-tab" class="text-upper">для собак</label>
+                    </li>
+                    <li>
+                        <label for="rodents" id="rodents-tab" class="text-upper">для грызунов</label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="panels">
+            <div id="all-container" class="justify-content-between flex-wrap catalog-container">
+                <div class="c-card">
+                    <img src="assets/img/catalog/dogs/1.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для собак Darsi Adult крупных пород
+                        мясное ассорти 10кг</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">1725<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/dogs/2.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для собак ROYAL CANIN 
+                            мелких пород 4кг</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">2070<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/dogs/3.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для собак Harty 10кг с кроликом 
+                            для взрослых собак</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">2190<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/cats/1.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм сухой для кошек 
+                            Perfect Fit 2.5кг курица
+                        </h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">1020<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/cats/2.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм сухой для котят ROYAL CANIN
+                        Kitten 2кг</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">950<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/cats/3.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для кошек ROYAL CANIN Indoor 27
+                        200г</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">430<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/rodents/1.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для крыс Little One 900г</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">378<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/rodents/2.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для хомяков Little One 900г</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">378<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/rodents/3.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для морских свинок Little One
+                        900г</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">408<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dogs-container" class="justify-content-between flex-wrap catalog-container">
+                <div class="c-card">
+                    <img src="assets/img/catalog/dogs/1.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для собак Darsi Adult крупных пород
+                            мясное ассорти 10кг</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">1725<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/dogs/2.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для собак ROYAL CANIN 
+                            мелких пород 4кг</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">2070<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/dogs/3.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для собак Harty 10кг с кроликом 
+                            для взрослых собак</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">2190<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cats-container" class=" justify-content-between flex-wrap catalog-container">
+                <div class="c-card">
+                    <img src="assets/img/catalog/cats/1.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм сухой для кошек 
+                            Perfect Fit 2.5кг курица
+                        </h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">1020<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/cats/2.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм сухой для котят ROYAL CANIN
+                            Kitten 2кг</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">950<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/cats/3.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для кошек ROYAL CANIN Indoor 27
+                            200г</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">430<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rodents-container" class=" justify-content-between flex-wrap catalog-container">
+                <div class="c-card">
+                    <img src="assets/img/catalog/rodents/1.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для крыс Little One 900г</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">378<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/rodents/2.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для хомяков Little One 900г</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">378<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-card">
+                    <img src="assets/img/catalog/rodents/3.jpg" alt="card-image">
+                    <div class="card-body">
+                        <h4 class="text-upper text-center" style="color: #9d6712;">Корм для морских свинок Little One
+                            900г</h4>
+                        <div class="price-container d-flex justify-content-between align-items-center">
+                            <p class="price">408<span>р.</span></p>
+                            <p class="quota">1 шт.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="panel" id="sub">
+        <div class="container h-100 d-flex justify-content-center align-items-center flex-column">
+            <h1 class="section-title text-upper">Связаться с нами</h1>
+            <form class="w-50 mt-5 d-flex flex-column align-items-center">
+                <input type="text" class="form-control" placeholder="ФИО">
+                <input type="text" class="form-control mt-3" placeholder="ПОЧТА">
+                <button class="btn btn-white-big text-upper mt-5" id="subb">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="panel">
+            <p>Copyright © 2024 Хвостик<br>
+                Самофалов Никита Андреевич ИС-4-1<br>
+                Почта: hvostikzoo@mail.ru<br>
+                Контактный номер телефона:<br>
+                +7 988 978 3443<br>
+                Мы находимся: г.Волгоград, б-р 30-летия Победы, д. 21
+            </p>
+
+            <div class="h-100 d-flex align-items-end">
+                <ul class="nav">
+                    <li class="text-upper"><a href="#about-us">О нас</a></li>
+                    <li class="text-upper"><a href="#catalog">Каталог</a></li>
+                    <li class="text-upper"><a href="#sub">Контакты</a></li>
+                </ul>
+            </div>
+        
+    </footer>
+    <a class="btn btn-primary btn-up" href="#first-page"><img src="assets/img/go_up.png" alt="go up"></a>
+</body>
+</html>
